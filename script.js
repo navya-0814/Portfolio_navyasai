@@ -289,3 +289,5 @@ document.addEventListener("DOMContentLoaded", function () {
     let image = document.querySelector(".about .left img");
     image.classList.add("shake-image");
 });
+
+
