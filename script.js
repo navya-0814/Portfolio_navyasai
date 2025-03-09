@@ -137,6 +137,7 @@ window.addEventListener('wheel', (event) => {
     }
     
     
+    
     function openPreview(imageSrc) {
         const preview = document.getElementById("preview");
         const previewImg = document.getElementById("previewImg");
