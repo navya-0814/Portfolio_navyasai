@@ -141,6 +141,7 @@ window.addEventListener('wheel', (event) => {
         const preview = document.getElementById("preview");
         const previewImg = document.getElementById("previewImg");
         const downloadLink = document.getElementById("downloadLink");
+        
     
         previewImg.src = imageSrc;
         downloadLink.href = imageSrc;
@@ -171,7 +172,7 @@ function openPreview(imgSrc) {
         document.addEventListener("DOMContentLoaded", function () {
             const slider = document.querySelector(".slider");
             let scrollAmount = 0;
-            const speed = 0.5; // Adjust scrolling speed
+            const speed = 0; // Adjust scrolling speed
             let clone = slider.innerHTML; // Clone the certificates for infinite scrolling
             slider.innerHTML += clone; // Duplicate certificates to create a loop
         
@@ -181,6 +182,7 @@ function openPreview(imgSrc) {
                     scrollAmount = 0; // Reset to create an infinite loop effect
                 }
                 slider.style.transform = `translateX(-${scrollAmount}px)`;
+
                 requestAnimationFrame(scrollCertificates);
             }
         

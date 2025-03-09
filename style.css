@@ -3,6 +3,7 @@ html, body {
     overflow-x: hidden;
 }
 
+
 @keyframes shakeLR {
     0% { transform: translateX(0); }
     25% { transform: translateX(-5px); }
